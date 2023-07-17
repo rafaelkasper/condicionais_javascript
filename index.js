@@ -42,31 +42,47 @@ function operadorTernario() {
 }
 
 function condicaoSwitch() {
-  let signo = window.prompt("Qual é seu signo?");
-  switch (signo) {
-    case "Áries":
-      console.log("Você nasceu entre 21 março e 20 abril");
+  let mes = window.prompt("Digite o mês");
+  let nomeMes = "";
+  switch (Number(mes)) {
+    case 1:
+      nomeMes = "Janeiro";
       break;
-    case "Touro":
-      console.log("Você nasceu entre 21 abril e 20 maio");
+    case 2:
+      nomeMes = "Fevereiro";
       break;
-    case "Gêmeos":
-      console.log("Você nasceu entre 21 maio e 20 junho");
+    case 3:
+      nomeMes = "Março";
       break;
-    case "Câncer":
-      console.log("Você nasceu entre 21 junho e 22 julho");
+    case 4:
+      nomeMes = "Abril";
       break;
-    case "Leão":
-      console.log("Você nasceu entre 23 julho e 22 agosto");
+    case 5:
+      nomeMes = "Maio";
       break;
-    case "Virgem":
-      console.log("Você nasceu entre 23 agosto e 22 setembro");
+    case 6:
+      nomeMes = "Junho";
       break;
-    case "Libra":
-      console.log("Você nasceu entre 23 setembro e 22 outubro");
+    case 7:
+      nomeMes = "Julho";
+      break;
+    case 8:
+      nomeMes = "Agosto";
+      break;
+    case 9:
+      nomeMes = "Setembro";
+      break;
+    case 10:
+      nomeMes = "Outubro";
+      break;
+    case 11:
+      nomeMes = "Novembro";
+      break;
+    case 12:
+      nomeMes = "Dezembro";
       break;
     default:
-      console.log("Signo não encontrado");
-      break;
+      nomeMes = "Mês inexistente";
   }
+  console.log(nomeMes);
 }

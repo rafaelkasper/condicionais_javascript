@@ -12,10 +12,16 @@ body {
 }
 
 .c-card {
+  background: rgba(19, 41, 61, 0.53);
+  box-shadow: 0 8px 32px 0 rgba(70, 130, 180, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(70, 130, 180, 0.1);
   padding: 1rem;
   margin: 2rem;
   color: #fff;
-  box-shadow: 0 0 20px rgba(230, 221, 41, 0.2);
+
   text-align: center;
 }
 
